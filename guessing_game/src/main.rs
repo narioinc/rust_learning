@@ -8,7 +8,9 @@ fn main() {
    
 
     let secret_number = rand::rng().random_range(1..100);
-    println!("The secret number is: {}", secret_number);
+    
+    // comment out the secret number ot actually play the game !! :)
+    //println!("The secret number is: {}", secret_number);
 
     loop{
     println!("Please input your guess.");
