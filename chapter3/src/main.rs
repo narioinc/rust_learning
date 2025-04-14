@@ -52,4 +52,56 @@ fn main() {
     let arr2: [i32; 6] = [1, 2, 3, 4, 5, 6];
     println!("arr2 is : {:?}", arr2);
     println!("arr2[0] is : {}", arr2[0]);
+
+    second_function();
+
+    third_function(5);
+
+    multi_params(5, String::from("hello"));
+
+    let result = add(5,6);
+    println!("result is : {}", result);
+
+    //Conditionals
+    let x: i32 = 5;
+    if x > 10 {
+        println!("x is greater than 10");
+    } else if x < 10 {
+        println!("x is less than 10");
+    } else {
+        println!("x is equal to 10");
+    }
+
+    let is_gt_ten: bool = check_num(11);
+    println!("{} ", is_gt_ten);
+
+}
+
+// simple function
+fn second_function() {
+    println!("this is second function");
+}   
+
+//function with parameters
+fn third_function(x: i32) {
+    println!("this is third function with parameter {}", x);
+}
+
+//function with multiple parameters
+fn multi_params(x: i32, name: String) {
+    println!("{} {}", x, name);
+}
+
+//function with return value
+fn add(x: i32, y: i32) -> i32 {
+    x + y
+}
+
+//function with return value and multiple parameters
+fn check_num(x: i32) -> bool {
+    if x > 10 {
+        true
+    } else {
+        false
+    }
 }
