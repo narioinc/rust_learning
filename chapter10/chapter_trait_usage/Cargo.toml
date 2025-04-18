@@ -1,0 +1,14 @@
+[package]
+name = "chapter_trait_usage"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+[lib]
+name = "mylib"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mybin"
+path = "src/main.rs"
