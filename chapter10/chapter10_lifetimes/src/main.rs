@@ -25,3 +25,6 @@ fn fucn2<'a>(point1: &'a Point<i32>, point2: &'a Point<i32>) -> &'a Point<i32> {
 
 //take note of lifetine elison rules to ensure that you know when to explicitly mention lifetimes and
 // when not to
+// 1. fn foo<'a>(x: &'a str, y: &'a str) -> &'a str
+// 2. fn foo<'a>(x: &'a str, y: &str) -> &'a str
+// 3. fn foo<'a>(x: &str, y: &str) -> &'a str
