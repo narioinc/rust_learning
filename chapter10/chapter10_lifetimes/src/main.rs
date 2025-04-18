@@ -22,3 +22,6 @@ fn fucn2<'a>(point1: &'a Point<i32>, point2: &'a Point<i32>) -> &'a Point<i32> {
         point2
     }
 }
+
+//take note of lifetine elison rules to ensure that you know when to explicitly mention lifetimes and
+// when not to
